@@ -1,0 +1,12 @@
+[package]
+name = "injector"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+minhook = "0.1.0"
+sysinfo = "0.28.4"
+winapi = "0.3.0"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3" }
